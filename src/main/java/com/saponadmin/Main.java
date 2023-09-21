@@ -42,6 +42,14 @@ public class Main {
         System.out.println(a + " * " + b + " = " + res);
 
         System.out.println("*******************");
+        System.out.println("Символьный тип");
+        System.out.println("*******************");
+        char aChar = 'D';
+        System.out.println(aChar); // Выведет D
+        char bChar = (char) (aChar + 1);
+        System.out.println(bChar); // Выведет E
+
+        System.out.println("*******************");
         System.out.println("Вычисления с различными типами данных");
         System.out.println("*******************");
         int x = 100;
@@ -49,6 +57,27 @@ public class Main {
         System.out.println("100 * 3.14 = " + x * y);
         double resXY = x * y;
         System.out.println(resXY);
+
+        System.out.println("*******************");
+        System.out.println("Логические операторы");
+        System.out.println("*******************");
+        int varA = 123;
+        int varB = 321;
+
+        if (varA > varB) {
+            System.out.println(varA + ">" + varB);
+        }
+        else if (varB > varA) {
+            System.out.println(varB + ">" + varA);
+        }
+        else {
+            System.out.println(varA + "=" + varB);
+        }
+
+        // Тернарный оператор
+        int age = 17;
+        String access = age > 18 ? "Доступ разрешен" : "Доступ запрещен";
+        System.out.println(access); // Доступ запрещен
 
     }
 
